@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="600px" height="400px"
+viewBox="0 0 1600 1600"
+preserveAspectRatio="xMidYMid">
+<defs>
+<g id="triangle">
+<polygon points="300,591.2050807568877 0,418 299.9999999999999,244.7949192431122" transform="translate(-20,390) scale(2,2) rotate(-30)"/>
+</g>
+
+<g id="multi">
+
+<polygon id="polygone1" points="580.7759065022574,494.53668647301794 
+472.536686473018,602.7759065022574 319.46331352698206,602.7759065022574 
+211.22409349774264,494.536686473018 211.22409349774264,341.46331352698206 
+319.46331352698195,233.2240934977427 472.536686473018,233.22409349774267 580.7759065022573,341.4633135269819" >
+   <animateTransform attributeName="transform"
+   attributeType="XML"
+   type="rotate"
+   from="0 396 418"
+   to="360  396 418"
+   dur="4s"
+   repeatCount="indefinite"/>
+</polygon>
+<polygon id="polygone2" points="1284.7759065022574,676.536686473018 
+1176.5366864730179,784.7759065022574 1023.463313526982,784.7759065022574 
+915.2240934977426,676.536686473018 915.2240934977426,523.4633135269821 
+1023.4633135269819,415.22409349774273 1176.536686473018,415.2240934977427 1284.7759065022574,523.4633135269819" >
+   <animateTransform attributeName="transform"
+   attributeType="XML"
+   type="rotate"
+   from="0 1100 600"
+   to="360  1100 600"
+   dur="4s"
+   repeatCount="indefinite"/>
+   
+</polygon>
+<rect x = "500" y = "190" height = "80" width = "750"
+transform="rotate(18)" fill="red" />
+</g>
+  </defs>
+
+<use xlink:href="#triangle"
+         transform="
+		translate(-150,100)
+		scale(0.25, 0.5)"
+
+	fill="purple"
+	/>
+
+    <use xlink:href="#multi"
+         transform="
+	translate(-350,100)
+   scale(0.5, 0.5)"
+   />
+   
+        <use xlink:href="#triangle"
+         transform="
+		translate(1150,100)
+		scale(0.15, 0.3)" 
+		fill="green"/>
+		<use xlink:href="#multi"
+		transform="
+		translate(1050,100)
+		scale(0.3, 0.3)"
+  
+		/>
+	
+	   <use xlink:href="#triangle"
+         transform="
+		 scale(0.4, 0.8)
+		 translate(1200,600)"
+		 fill="blue"
+	   />
+	
+	   <use xlink:href="#multi"
+         transform="
+		 scale(0.8, 0.8)
+		 translate(200,600)
+		"/>
+</svg>
